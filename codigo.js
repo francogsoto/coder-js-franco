@@ -54,7 +54,7 @@ function validarFormulario(e){
 
 ////
 
-const dataUsuarios = []
+const dataUsuarios = [];
 
 class Usuarios{
     constructor(nombre, apellido, edad, ciudad){
@@ -71,7 +71,7 @@ function nuevoObjeto(){
     let edadIngresada = parseInt(prompt("Ingrese su edad"))
     let ciudadIngresada = prompt("Ingrese ciudad donde vive")
     let nuevoObjeto = new Usuarios(nombreIngresado, apellidoIngresado, edadIngresada, ciudadIngresada)
-    console.log(nuevoObjeto);
+    alert(nuevoObjeto);
     dataUsuarios.push(nuevoObjeto)
 
     console.log(dataUsuarios);
