@@ -34,7 +34,7 @@ function add(product, price) {
     document.getElementById("checkout").innerHTML = `Pagar $${total}`
 }
 
-function pay() {
+function pagar() {
     window.alert(products.join(", \n"));
     swal({
       title: "Desea realizar la compra?",
@@ -87,11 +87,12 @@ function muestraInfoUsuario(){
     let nombreIngresado = prompt("Ingrese su nombre")
     let apellidoIngresado = prompt("Ingrese su apellido")
     let edadIngresada = parseInt(prompt("Ingrese su edad"))
-    let ciudadIngresada = prompt("Ingrese ciudad donde vive")
+    let ciudadIngresada = prompt("Ingrese ciudad")
+    let direccionIngresada = prompt("Ingrese direccion donde vive")
     //let nuevoObjeto = swal(`Bienvenid@ ${nombreIngresado} ${apellidoIngresado}, usted se encuentra en ${ciudadIngresada}`)
    //let nuevoObjeto = (nombreIngresado+apellidoIngresado+edadIngresada+ciudadIngresada);
-   //swal(`Bienvenid@ ${nombreIngresado} ${apellidoIngresado}, usted se encuentra en ${ciudadIngresada}`);
-   let nuevoObjeto = 
+   
+   let nuevoObjeto = swal(`Bienvenid@ ${nombreIngresado} ${apellidoIngresado} (${edadIngresada}), usted se encuentra en ${ciudadIngresada} con direccion en ${direccionIngresada}`);
     console.log(nuevoObjeto);
     dataUsuarios.push(nuevoObjeto)
 

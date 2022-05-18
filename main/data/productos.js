@@ -9,6 +9,6 @@ const products = [
     
     ]
 
-    sessionStorage.setItem("MIS_PRODUCTOS", productos);
+    sessionStorage.setItem("MIS_PRODUCTOS", products);
 
     

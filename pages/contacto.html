@@ -50,8 +50,8 @@
             </ul>
             <button id="btnAlert" class="nav-link bg-warning text-dark rounded" onclick="muestraInfoUsuario()">Ingresar
                 <i class="fa-solid fa-user"></i></button>
-                <button id="checkout" class="nav-link bg-warning text-dark rounded button-checkout" onclick="pay()">
-                Pagar<i class="fa-solid fa-cart-shopping"></i></button>
+                <button id="checkout" class="nav-link bg-warning text-dark rounded button-checkout" onclick="pagar()">
+                  Pagar<i class="fa-solid fa-cart-shopping"></i></button>
         </div>
         <div id="container_prendeApaga">
             <div id="button_container">
@@ -111,7 +111,7 @@
                 </div>
 
             <div class="button mx-auto">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Enviar</button>
             </div>
         </form>
         </div>
@@ -139,8 +139,10 @@
     <!-- ----------------- -->
 
  <!-- LINK JS -->
- <script src="sweetalert.js"></script>
  <script src="../codigo.js"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+ 
  <script src="../main/cambiarColor.js"></script>
  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
