@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #24272E;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+.header {
+height: 12vh;
+    .nav-link{
+        margin: 0px 20px;
+    }
+    .nav-link:hover {
+background-color: rgba(32, 69, 75, 0.309);
+
+}
+}
+
+
+
+
+
+.main {
+    
+    .card {
+        
+        transition: transform 550ms;
+        &:hover{
+            transform: translateY(-8px);
+    }
+}
+        
+    .card-body:hover{
+        background-color: rgba(32, 69, 75, 0.309);
+    }
+    .card-footer {
+        margin-bottom: 10px;
+        &:hover{
+            background-color: rgba(25, 85, 99, 0.309);
+            border: rgb(57, 175, 96) solid 1px;
+            border-radius: 10px;
+        }
+    }
+        
+            .btn {
+                height: 34px;
+                line-height: 1;
+        }
+    
+}
+
+.container__Menu {
+    padding-bottom: 20px;
+    
+}
+
+.container__separador {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    :hover{
+        color: rgb(57, 175, 96);
+    }
+}
+
+.productosMenu {
+    display: flex;
+    
+    width: 300px;
+    
+}
+
+.divMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    
+    border-radius: 15px;
+        .divMapa iframe {
+            display: flex;
+            justify-content: center;
+            
+            }
+            .divMapa__iframe {
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+    }
+
+.boton:hover{
+    background-color: rgb(57, 175, 96);
+}
+
+
+.footer {
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+        &__links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        &__links li {
+                
+                display: inline-block;
+            } 
+
+}
+
+
+
+// @media (max-width: 700px) {
+//    header{
+//        flex-direction: column;
+//    }
+//     nav {
+//          padding: 10px 0px;
+//   }
+
+
