@@ -36,6 +36,24 @@ function add(product, price) {
 
 function pay() {
     window.alert(products.join(", \n"));
+    swal({
+      title: "Desea realizar la compra?",
+      text: "En caso de haber realizado la compra, tiene 60 min para cancelar la misma",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal("Su compra ha sido realizada!", {
+          icon: "success",
+        });
+      } else {
+        swal("La compra no se realizo!", {
+          icon: "error"
+        });
+      }
+    });
 }
 
 // VALIDAR FORM:
@@ -65,13 +83,16 @@ class Usuarios{
         this.ciudad = ciudad
     }
 }
-function nuevoObjeto(){
+function muestraInfoUsuario(){
     let nombreIngresado = prompt("Ingrese su nombre")
     let apellidoIngresado = prompt("Ingrese su apellido")
     let edadIngresada = parseInt(prompt("Ingrese su edad"))
     let ciudadIngresada = prompt("Ingrese ciudad donde vive")
-    let nuevoObjeto = new Usuarios(nombreIngresado, apellidoIngresado, edadIngresada, ciudadIngresada)
-    alert(nuevoObjeto);
+    //let nuevoObjeto = swal(`Bienvenid@ ${nombreIngresado} ${apellidoIngresado}, usted se encuentra en ${ciudadIngresada}`)
+   //let nuevoObjeto = (nombreIngresado+apellidoIngresado+edadIngresada+ciudadIngresada);
+   //swal(`Bienvenid@ ${nombreIngresado} ${apellidoIngresado}, usted se encuentra en ${ciudadIngresada}`);
+   let nuevoObjeto = 
+    console.log(nuevoObjeto);
     dataUsuarios.push(nuevoObjeto)
 
     console.log(dataUsuarios);
